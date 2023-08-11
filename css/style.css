@@ -21,10 +21,10 @@ body{background-color: var(--bgColor);}
 /* 主视觉 */
 .banner{width: 100%;height: 40rem;background-color: #B8000F;}
 /* 内容块 */
-.main{width: var(--mianWidth);margin: 0 auto;margin-top: var(--box-marTop);}
+.main{width: 75rem;margin: 0 auto;margin-top: 8rem;}
 .box-title-wrap{text-align: center;}
-.box-title{color: var(--colorTIT);font-size: var(--sizeTIT);font-weight: 900;}
-.box-tit-eng{color: var(--colorD6);font-size: var(--sizeTIT-ENG);}
+.box-title{color: var(--colorTIT);font-size: 1.75rem;font-weight: 900;}
+.box-tit-eng{color: var(--colorD6);font-size: 1.75rem}
 .box-tit-cha{position: relative;display: flex;justify-content: center;align-items: center;}
 /* 标题装饰 */
 .decoration-box{width: 0.625rem;height: 0.625rem;background-color: var(--tit-bgColor);transform: rotate(45deg);margin: 0 0.5rem;}
@@ -38,7 +38,7 @@ body{background-color: var(--bgColor);}
 .background-cont{font-size: 0.875rem;color: var(--color383838);text-align:justify;text-justify:inter-ideograph;}
 .background-cont p{margin-top: 2rem;line-height: 1.625rem;text-indent: 2rem;}
 /* 活动流程 */
-.process{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: var(--con-marTop);}
+.process{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 3rem;}
 .process li{width: 49.5%;display: flex;justify-content: space-between;flex-wrap: nowrap;height: 5rem;background-color: #fff;border-radius: 0.5rem;overflow: hidden;margin: 0 0 1rem 0;align-items: center;}
 .process-tit{width: 15%;background: linear-gradient(127.95deg, rgba(254, 82, 57, 1) 0%, rgba(255, 151, 132, 1) 100%);height: 5rem;text-align: center;line-height: 5rem;color: var(--colorFFF);font-weight: 900}
 .process-con{width: 60%;}
@@ -66,8 +66,13 @@ body{background-color: var(--bgColor);}
 	.background-cont{font-size: 0.75rem;}
 	.background-cont p{margin-top: 1rem;line-height: 1.35rem;text-indent: 1.6rem;}
 	/* 活动流程 */
+	.process{margin-top: 2rem;}
 	.process li{width: 94%;position: relative;padding: 3rem 3% 1.5rem 3%;margin: 0 0 0.5rem 0;height: auto;}
 	.process-tit{position: absolute;height: 2rem;top: 0;left: 0;width: 5.3rem;line-height: 2rem;border-radius: 8px 0px 10px 0px;}
 	.process-con{font-size: 0.875rem;}
 	.process-time{width: 35%;}
+	/* 内容块 */
+	.main{width: 92%;margin-top: 4rem;}
+	.box-title{font-size: 1.35rem;}
+	.box-tit-eng{font-size: 1rem}
 }
