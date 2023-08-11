@@ -1,0 +1,38 @@
+:root{
+	/* 背景色 */
+	--bgColor: #F0F0F0;
+	
+	/* 容器颜色 */
+	--boxColor: #D43030;
+	
+	/* 标题装饰 */
+	--tit-bgColor: #D43030;
+	
+	/* 字体色 */
+	--colorFFF: #fff;
+	--colorTIT: rgba(242, 68, 68, 1);
+	--colorD6: #D6D6D6;
+	--color383838: #383838;
+	
+	/* 内容宽度 */
+	--mianWidth:75rem;
+	/* 块上边距 */
+	--box-marTop: 8rem;
+	--con-marTop: 3rem;
+	
+	/* 字体大小 */
+	--sizeTIT:1.75rem;
+	--sizeTIT-ENG:1.75rem;
+	
+	@media(max-width:767px){
+		/* 内容宽度 */
+		--mianWidth:92%;
+		/* 块上边距 */
+		--box-marTop: 5rem;
+		--con-marTop: 2rem;
+		
+		/* 字体大小 */
+		--sizeTIT:1.375rem;
+		--sizeTIT-ENG:1rem;
+	}
+}
