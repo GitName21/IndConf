@@ -40,7 +40,7 @@ body{background-color: var(--bgColor);}
 /* 活动流程 */
 .process{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 3rem;}
 .process li{width: 49.5%;display: flex;justify-content: space-between;flex-wrap: nowrap;height: 5rem;background-color: #fff;border-radius: 0.5rem;overflow: hidden;margin: 0 0 1rem 0;align-items: center;cursor: pointer;transition: all 0.3 ease;}
-.process li:last-child{width: 100%;}
+.process li:last-child{width: 100%;margin: 0 0 0 0;}
 .process li:hover{box-shadow: 0.2rem 0.2rem 0.3rem #dcdcdc;}
 .process-tit{width: 18%;background: linear-gradient(127.95deg, rgba(254, 82, 57, 1) 0%, rgba(255, 151, 132, 1) 100%);height: 5rem;text-align: center;line-height: 5rem;color: var(--colorFFF);font-weight: 900}
 .process-con{width: 57%;}
@@ -73,6 +73,7 @@ body{background-color: var(--bgColor);}
 	/* 活动流程 */
 	.process{margin-top: 2rem;}
 	.process li{width: 94%;position: relative;padding: 3rem 3% 1.5rem 3%;margin: 0 0 0.5rem 0;height: auto;}
+	.process li:last-child{margin: 0 0 0rem 0;}
 	.process-tit{position: absolute;height: 2rem;top: 0;left: 0;width: 5.3rem;line-height: 2rem;border-radius: 8px 0px 10px 0px;}
 	.process-con{font-size: 0.875rem;}
 	.process-time{width: 35%;}
