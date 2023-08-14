@@ -240,7 +240,7 @@
 				</ul>
 			</div>
 			<!-- 评选规则 -->
-			<div class="main main-process">
+			<div class="main">
 				<div class="box-title-wrap">
 					<div class="wow animate__animated animate__zoomIn box-tit-cha">
 						<div class="decoration-box decoration-box-1"></div>
@@ -347,7 +347,7 @@
 			</div>
 			<!-- 内容块 -->
 			<!-- 活动流程 -->
-			<div class="main main-process">
+			<div class="main">
 				<div class="box-title-wrap">
 					<div class="wow animate__animated animate__zoomIn box-tit-cha">
 						<div class="decoration-box decoration-box-1"></div>
@@ -364,4 +364,14 @@
 			</div>
 		</div>
 	</body>
+	<script src="js/vanilla-tilt.js.js"></script>
+	<script>
+	    // vanilla-tilt.js是一个平滑的3D倾斜JS库，具体参数配置度娘可查到
+	    VanillaTilt.init(document.querySelectorAll(".hig-cont-box"),{
+	        max:20, //最大倾斜度数
+	        speed:400, //倾斜转换的速度
+	        glare:true,//是否开启眩光效果
+	        "max-glare":0//最大眩光的不透明度
+	    })
+	</script>
 </html>
