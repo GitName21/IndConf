@@ -41,7 +41,9 @@ body{background-color: var(--bgColor);}
 .introduce{width: 100%;height: auto;display: flex;flex-wrap: wrap;justify-content: space-between;}
 .introduce-img{width: 40%;height: auto;}
 .introduce-img img{width: 100%;height: 100%;}
-.introduce-cont{width:54%;height: auto;background-color: #fff;padding: 2rem 3%;line-height: 1.8rem;font-size: 0.875rem;}
+.introduce-cont{width:54%;height: auto;background-color: #fff;padding: 2rem 3%;line-height: 1.6rem;font-size: 0.875rem;}
+.introduce-cont p:first-child{margin-bottom: 1rem;}
+.introduce-cont p{text-indent: 2rem;}
 .introduce-cont-tit{font-size: 2rem;margin-bottom: 1.5rem;color: var(--colorTIT);}
 /* 活动流程 */
 .process{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 3rem;}
