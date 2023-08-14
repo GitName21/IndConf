@@ -85,8 +85,10 @@ body{background-color: var(--bgColor);}
 .rules-after-btn:hover{background-color: #fff;color: #000;}
 .rules-cont-1 p{font-size: 0.875rem;line-height: 1.5rem;}
 .rules-after-1 ul{margin-top: 2rem;font-size: 0.875rem;}
-.rules-qua{text-align: center;}
+.rules-qua{text-align: center;margin-top: 2rem;}
 .rules-qua div:nth-child(2){font-size: 0.875rem;color: var(--color383838);margin: 1rem 0;line-height: 1.625rem;}
+.rules-qua div:last-child{border: 2px solid #D43030;width: 12rem;margin: 0 auto;line-height: 3.5rem;border-radius: 50rem;color: var(--colorTIT);transition: all 0.3s ease;}
+.rules-qua div:last-child:hover{background-color: #D43030;color: #fff;}
 
 /* 移动端 */
 /* 超小屏幕（手机，小于 768px）*/
@@ -134,4 +136,7 @@ body{background-color: var(--bgColor);}
 	/* 选评标准 */
 	.rules{margin-top: 2rem;}
 	.rules>li{width: 100%;}
+	.rules-qua{margin-top: 1rem;}
+	.rules-qua div:nth-child(2){font-size: 0.75rem;line-height: 1.25rem;margin: 0.5rem 0 1.5rem 0;}
+	.rules-qua div:nth-child(2) p{border-bottom: 1px solid #d6d6d6;padding: 0.5rem 0;}
 }
