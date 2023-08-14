@@ -77,8 +77,16 @@ body{background-color: var(--bgColor);}
 	50%{transform:rotateY(220deg)}
 	100%{transform:rotateY(180deg)}
 }
-.rules>li:hover .rules-after{animation: rulesAfter 1.3s ease-out forwards;}
-.rules>li:hover .rules-front{animation: rulesFront 1.3s ease-out forwards;}
+.rules>li:hover .rules-after{animation: rulesAfter 1s ease-out forwards;}
+.rules>li:hover .rules-front{animation: rulesFront 1s ease-out forwards;}
+.rules-after ul{margin-top: 3rem;list-style-type: circle;}
+.rules-after ul li{margin-bottom: 0.8rem;list-style-type: circle;margin-left: 2rem;}
+.rules-after-btn{width: 8rem;height:3rem;border-radius: 100rem;border: 1px solid #fff;text-align: center;line-height: 3rem;margin: 3rem auto 0 auto;transition: all 0.3s ease;}
+.rules-after-btn:hover{background-color: #fff;color: #000;}
+.rules-cont-1 p{font-size: 0.875rem;line-height: 1.5rem;}
+.rules-after-1 ul{margin-top: 2rem;font-size: 0.875rem;}
+.rules-qua{text-align: center;}
+.rules-qua div:nth-child(2){font-size: 0.875rem;color: var(--color383838);margin: 1rem 0;line-height: 1.625rem;}
 
 /* 移动端 */
 /* 超小屏幕（手机，小于 768px）*/
@@ -121,4 +129,9 @@ body{background-color: var(--bgColor);}
 	.hig-cont{width: 95%;margin-top: 1rem;font-size: 0.875rem;line-height: 1.75rem;}
 	.hig-cont-box{width: 90%;padding: 5% 5% 3rem 5%;}
 	.hig-cont-1{font-size: 0.75rem;margin-top: 0.6rem;}
+	.highlights-cont li:nth-child(5),.highlights-cont li:nth-child(6){margin-bottom: 1rem;}
+	.highlights-cont li:nth-child(7),.highlights-cont li:nth-child(8){margin-bottom: 0;}
+	/* 选评标准 */
+	.rules{margin-top: 2rem;}
+	.rules>li{width: 100%;}
 }
