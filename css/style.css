@@ -97,6 +97,17 @@ body{background-color: var(--bgColor);}
 .rules-qua div:nth-child(2){font-size: 0.875rem;color: var(--color383838);margin: 1rem 0;line-height: 1.625rem;}
 .rules-qua div:last-child{border: 2px solid #D43030;width: 12rem;margin: 0 auto;line-height: 3.5rem;border-radius: 50rem;color: var(--colorTIT);transition: all 0.3s ease;}
 .rules-qua div:last-child:hover{background-color: #D43030;color: #fff;}
+/* 拟邀嘉宾 */
+.guests{width: 100%;height: auto;margin-top: 3rem;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.guests li{width: 24%;height: auto;margin-bottom: 1rem;}
+.guests-box{width: 100%;height: 12.5rem;background-color: #fff;display: flex;justify-content: space-between;flex-wrap: wrap;align-items: center;border-radius: 1.25rem;color: var(--color383838);cursor: pointer;border: 1px solid transparent;transition: all 0.3s ease;}
+.guests-avatar{width: 40%;height: auto;}
+.guests-avatar img{width: 100%;height: auto;}
+.guests-intr{width: 60%;position: relative;}
+.guests-intr div:first-child{font-size: 1.375rem;margin-bottom: 1rem;position: relative;z-index: 2;}
+.guests-intr::before{width: 4rem;height: 1.25rem;background-color: #F7DADA;content: '';left: 1.8rem;top: 0.8rem;position: absolute;z-index: 1;}
+.guests-intr div:last-child{font-size: 0.875rem;padding-right: 1rem;}
+.guests-box:hover{border: 1px solid #D43030;}
 
 /* 移动端 */
 /* 超小屏幕（手机，小于 768px）*/
@@ -151,4 +162,11 @@ body{background-color: var(--bgColor);}
 	.introduce-img{width: 100%;}
 	.introduce-img img{width: 100%;height: auto;}
 	.introduce-cont{width:94%;height: auto;padding: 2rem 3%;line-height: 1.35rem;font-size: 0.75rem;}
+	/* 你邀嘉宾 */
+	.guests{margin-top: 2rem;}
+	.guests li{width: 48%;display: flex;align-items: stretch;}
+	.guests-box{width: 90%;height: auto;padding: 1rem 5%;}
+	.guests-avatar{width:80%;}
+	.guests-intr{width: auto;padding: 0 1rem;}
+	.guests-intr div:last-child{font-size: 0.75rem;padding: 0;}
 }
