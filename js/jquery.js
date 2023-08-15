@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	var winScroll = $(window).scrollTop();	//获取屏幕滚动距离
 	var winHeight = $(window).height();		//获取窗口可视高度
 	// 导航栏点击滚动效果
@@ -36,4 +37,29 @@ $(document).ready(function(){
 		   }
 		}
 	})
+	
+	$(document).on("mousewheel DOMMouseScroll", function (e) {
+	        var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||  // chrome & ie
+	                (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));              // firefox
+			var winScroll = $(window).scrollTop();	//获取屏幕滚动距离
+			var winWidth = $(window).width();
+			if(winWidth > 767){	//移动端不执行
+				if (delta > 0) {
+				    // 向上滚
+				    // console.log("wheelup");
+					
+					if(winScroll == 0){
+						$('.nav-wrap').css({'position':'static'})
+					}else{
+						$('.nav-wrap').slideDown(500)
+						$('.nav-wrap').css({'position':'fixed','z-index':'99'})
+					}
+				} else if (delta < 0) {
+				    // 向下滚
+				    // console.log("wheeldown");
+					$('.nav-wrap').slideUp(500)
+					$('.nav-wrap').css({'position':'static'})
+				}
+			}
+	    });
 });
