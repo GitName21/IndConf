@@ -7,7 +7,7 @@ $(document).ready(function(){
 		// $(this).addClass('nav-current-pc').siblings().removeClass('nav-current-pc');
 		
 		var index = $(this).index(); //获取当前点击元素下标
-		var contBox = $('.main').eq(index);
+		var contBox = $('.main').eq(index-1);
 		var boxTop = contBox.offset().top; //获取元素距离顶部距离
 		$("html,body").finish().animate({"scrollTop":boxTop-30},900);	//设置滚动
 	})
