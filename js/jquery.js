@@ -69,4 +69,21 @@ $(document).ready(function(){
 		$("html,body").finish().animate({"scrollTop":"0px"},900);
 	});
 	
+	// 移动端报名按钮
+	$('.mobile-register').click(function(){
+		$('.mobile-register-menu').fadeIn(300);
+		$('.mobile-register-menu').css({'display':'flex'});
+		
+		var top = $(document).scrollTop();
+		// 禁止窗口滚动
+		$(document).on('scroll.unable',function (e) {
+			$(document).scrollTop(top);
+		})
+	})
+	$('.mobile-register-close').click(function(){
+		$('.mobile-register-menu').fadeOut(300);
+		// 关闭遮罩是允许窗口滚动
+		$(document).unbind("scroll.unable");
+	})
+	
 });
