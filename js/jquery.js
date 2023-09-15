@@ -49,7 +49,7 @@ $(document).ready(function(){
 				// 向上滚
 				// console.log("wheelup");
 				
-				if(winScroll == 0){
+				if(winScroll <= 0){
 					$('.nav-wrap').css({'position':'static'})
 				}else{
 					$('.nav-wrap').slideDown(500)
@@ -58,8 +58,14 @@ $(document).ready(function(){
 			} else if (delta < 0) {
 				// 向下滚
 				// console.log("wheeldown");
-				$('.nav-wrap').slideUp(500);
-				$('.nav-wrap').css({'position':'static'});
+				
+				// $('.nav-wrap').css({'position':'static'});
+				 if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+					$('.nav-wrap').slideDown(500)
+					$('.nav-wrap').css({'position':'fixed','z-index':'99'})
+				}else{
+					$('.nav-wrap').slideUp(500);
+				}
 			}
 		}
 	});
