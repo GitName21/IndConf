@@ -243,6 +243,7 @@ body{background-color: var(--bgColor);}
 	.mobile-register-btn{background-color: #fff;line-height: 5rem;text-align: center;border-radius: 0.5rem;}
 	.mobile-register-btn:first-child{margin-bottom: 1rem;}
 	.mobile-register-close{width: 2rem;height: 2rem;background-color: rgba(0, 0, 0, 0.3);border-radius: 100%;display: flex;justify-content: center;align-items: center;margin-top: 1rem;}
+	.register-animate{animation:IntmobileNav 0.3s ease forwards;}
 	/* 特别鸣谢 */
 	.guide{width: 100%;height: auto;margin: 1rem auto 0 auto;}
 	.guide li{width: 44.5%;height: auto;margin: 0.5rem auto 0 auto;line-height: 1.2rem;font-size: 0.875rem;padding: 1rem 2%;}

@@ -73,6 +73,7 @@ $(document).ready(function(){
 	$('.mobile-register').click(function(){
 		$('.mobile-register-menu').fadeIn(300);
 		$('.mobile-register-menu').css({'display':'flex'});
+		$('.mobile-register').addClass('register-animate');
 		
 		var top = $(document).scrollTop();
 		// 禁止窗口滚动
@@ -82,6 +83,7 @@ $(document).ready(function(){
 	})
 	$('.mobile-register-close').click(function(){
 		$('.mobile-register-menu').fadeOut(300);
+		$('.mobile-register').removeClass('register-animate');
 		// 关闭遮罩是允许窗口滚动
 		$(document).unbind("scroll.unable");
 	})
