@@ -49,7 +49,7 @@ $(document).ready(function(){
 				// 向上滚
 				// console.log("wheelup");
 				
-				if(winScroll == 0){
+				if(winScroll <= 0){
 					$('.nav-wrap').css({'position':'static'})
 				}else{
 					$('.nav-wrap').slideDown(500)
@@ -58,8 +58,14 @@ $(document).ready(function(){
 			} else if (delta < 0) {
 				// 向下滚
 				// console.log("wheeldown");
-				$('.nav-wrap').slideUp(500);
-				$('.nav-wrap').css({'position':'static'});
+				
+				// $('.nav-wrap').css({'position':'static'});
+				 if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+					$('.nav-wrap').slideDown(500)
+					$('.nav-wrap').css({'position':'fixed','z-index':'99'})
+				}else{
+					$('.nav-wrap').slideUp(500);
+				}
 			}
 		}
 	});
@@ -86,6 +92,16 @@ $(document).ready(function(){
 		$('.mobile-register').removeClass('register-animate');
 		// 关闭遮罩是允许窗口滚动
 		$(document).unbind("scroll.unable");
+	})
+	$('.reg-mobile').click(function(){
+		$('.mobile-register-menu').fadeIn(300);
+		$('.mobile-register-menu').css({'display':'flex'});
+		
+		var top = $(document).scrollTop();
+		// 禁止窗口滚动
+		$(document).on('scroll.unable',function (e) {
+			$(document).scrollTop(top);
+		})
 	})
 	
 });

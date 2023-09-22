@@ -1,16 +1,16 @@
 :root{
 	/* 背景色 */
-	--bgColor: #F0F0F0;
+	--bgColor: #b81941;
 	
 	/* 容器颜色 */
-	--boxColor: #001fc2;
+	--boxColor: #a00b30;
 	
 	/* 标题装饰 */
-	--tit-bgColor: #01228b;
+	--tit-bgColor: #ffffff;
 	
 	/* 字体色 */
 	--colorFFF: #fff;
-	--colorTIT: #01228b;
+	--colorTIT: #ffffff;
 	--colorD6: #D6D6D6;
 	--color383838: #383838;
 	
