@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="css/var.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/banner/style.css">	<!--活动背景图片轮播-->
+		<link rel="stylesheet" type="text/css" href="css/banner/swipeslider.css"> <!--活动背景图片轮播-->
 		<script type="text/javascript" src="https://gitname21.github.io/HC/dist/wow.js"></script>
 		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 		<script src="js/jquery.js"></script>
@@ -83,11 +85,34 @@
 			</div>
 			<!-- 内容块 -->
 			<!-- 活动介绍 -->
-			<div class="main">
+			<div class="main" style="margin: 3rem auto 0 auto;">
 				<ul class="introduce">
 					<li class="wow animate__animated animate__fadeInUp introduce-img">
 						<div>
-							<img src="https://img.js.design/assets/img/650d3267ea02f448149e452e.png#ec583a81a31576302c276f737f3cf526"/>
+							<!-- 活动背景轮播图片 -->
+							<figure id="full_feature" class="swipslider">
+							  <ul class="sw-slides">
+							   <li class="sw-slide">
+							      <img src="https://img.js.design/assets/img/650d3267ea02f448149e452e.png#ec583a81a31576302c276f737f3cf526" alt="Summer beach concept">
+							    </li>
+							    <li class="sw-slide">
+							      <img src="https://img.js.design/assets/img/651103139acc63fd52cecc81.png#c71376370e368cc25e758e12debf9edc" alt="Lang from Yie Ar Kung Fu">
+							    </li>       
+							    <li class="sw-slide">
+							      <img src="https://img.js.design/assets/img/651103a4819392ea605597cb.png#ffb09a3c06b9ec7176390856954f7671" alt="Example of a not sized slide">
+							    </li>
+							    <li class="sw-slide">
+							      <img src="https://img.js.design/assets/img/6511042bea02f44814cc6532.png#4052b48f13749b608090e26726702bd4" alt="Tiny Tina">
+							    </li>
+							    <li class="sw-slide">
+							      <img src="https://img.js.design/assets/img/6511048546b3838659ec452a.png#6e88b0d52cc6b7418d66be85d9c493a2" alt="Tiny Tina from Borderlands 2">
+							    </li>
+							    <li class="sw-slide">
+							      <img src="https://img.js.design/assets/img/650d3267ea02f448149e452e.png#ec583a81a31576302c276f737f3cf526" alt="Redhead girl">
+							    </li>
+							  </ul>
+							</figure>
+							<!-- <img src="https://img.js.design/assets/img/650d3267ea02f448149e452e.png#ec583a81a31576302c276f737f3cf526"/> -->
 						</div>
 					</li>
 					<li class="introduce-cont">
@@ -163,24 +188,24 @@
 				</div>
 				<ul class="census">
 					<li>
-						<div><img src="https://img.js.design/assets/img/650d499696c49a6bff661b15.png#37d2cf0222a491d6966614ad3effdce5"/></div>
+						<div class="wow animate__animated animate__fadeInUp"><img src="https://img.js.design/assets/img/650d499696c49a6bff661b15.png#37d2cf0222a491d6966614ad3effdce5"/></div>
 						<div>
-							<div><span>暖通行业普查---</span><span>热泵类</span></div>
-							<div class="census-btn"><a>点我参与</a></div>
+							<div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s"><span>暖通行业普查---</span><span>热泵类</span></div>
+							<div class="wow animate__animated animate__fadeInUp census-btn" data-wow-delay="0.2s"><a>点我参与</a></div>
 						</div>
 					</li>
 					<li>
-						<div><img src="https://img.js.design/assets/img/650d499696c49a6bff661b15.png#37d2cf0222a491d6966614ad3effdce5"/></div>
+						<div class="wow animate__animated animate__fadeInUp"><img src="https://img.js.design/assets/img/650d499696c49a6bff661b15.png#37d2cf0222a491d6966614ad3effdce5"/></div>
 						<div>
-							<div><span>暖通行业普查---</span><span>热泵类</span></div>
-							<div class="census-btn"><a>点我参与</a></div>
+							<div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s"><span>暖通行业普查---</span><span>热泵类</span></div>
+							<div class="wow animate__animated animate__fadeInUp census-btn" data-wow-delay="0.2s"><a>点我参与</a></div>
 						</div>
 					</li>
 					<li>
-						<div><img src="https://img.js.design/assets/img/650d499696c49a6bff661b15.png#37d2cf0222a491d6966614ad3effdce5"/></div>
+						<div class="wow animate__animated animate__fadeInUp"><img src="https://img.js.design/assets/img/650d499696c49a6bff661b15.png#37d2cf0222a491d6966614ad3effdce5"/></div>
 						<div>
-							<div><span>暖通行业普查---</span><span>热泵类</span></div>
-							<div class="census-btn"><a>点我参与</a></div>
+							<div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s"><span>暖通行业普查---</span><span>热泵类</span></div>
+							<div class="wow animate__animated animate__fadeInUp census-btn" data-wow-delay="0.2s"><a>点我参与</a></div>
 						</div>
 					</li>
 				</ul>
@@ -702,5 +727,24 @@
 	        glare:true,//是否开启眩光效果
 	        "max-glare":0//最大眩光的不透明度
 	    })
+	</script>
+	<!-- 活动背景图片轮播 -->
+	<script type="text/javascript" src="css/banner/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="css/banner/swipeslider.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+		      $('#full_feature').swipeslider();
+		      $('#content_slider').swipeslider({
+		        transitionDuration: 600,
+		        autoPlayTimeout: 10000,
+		        sliderHeight: '300px'
+		      });
+		      $('#responsiveness').swipeslider();
+		      $('#customizability').swipeslider({
+		        transitionDuration: 1500, 
+		        autoPlayTimeout: 4000, 
+		        timingFunction: 'cubic-bezier(0.38, 0.96, 0.7, 0.07)',
+		        sliderHeight: '30%'});
+		    });
 	</script>
 </html>
