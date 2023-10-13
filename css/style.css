@@ -93,10 +93,10 @@ body{background-color: var(--bgColor);}
 .rules-qua{text-align: center;margin-top: 2rem;color: #fff;}
 .rules-qua div:first-child{font-size: 2rem;}
 .rules-qua div:nth-child(2){font-size: 0.875rem;color: #fff;margin: 1rem 0;line-height: 1.625rem;}
-.reg-mobile{border: 1px solid #a00b30;width: 12rem;margin: 0 auto;line-height: 3.5rem;border-radius: 50rem;color: #fff;transition: all 0.3s ease;display: none;}
-.reg-mobile:hover{color: #fff;background-color: #D43030;}
+.reg-mobile{border: 0.0625rem solid #dab097;width: 12rem;margin: 0 auto;line-height: 3.5rem;border-radius: 50rem;color: #dab097;transition: all 0.3s ease;display: none;font-weight: bold;font-size: 1.5rem;}
+.reg-mobile:hover{color: #fff;background-color: #dab097;}
 .reg-PC{width: 100%;height: auto;display: flex;justify-content: center;flex-wrap: nowrap;margin-top: 2rem;}
-.reg-PC li{width: 10rem;height: auto;background-color: ;margin: 0 1rem;line-height: 3.75rem;border-radius: 10rem;border: 0.125rem solid #a00b30;color: #ffffff;transition: all 0.3s ease;}
+.reg-PC li{width: 12rem;height: auto;margin: 0 1rem;line-height: 4rem;border-radius: 10rem;color: #dab097;transition: all 0.3s ease;font-size: 1.5rem;font-weight: bold;border: 0.0625rem solid #dab097;}
 .reg-PC li:hover{color: #b91941;background-color: #ffffff;}
 /* 拟邀嘉宾 */
 .guests{width: 100%;height: auto;margin-top: 3rem;display: flex;justify-content: space-between;flex-wrap: wrap;}
@@ -268,7 +268,7 @@ body{background-color: var(--bgColor);}
 	.guests-new li div:first-child img{max-width:100%;}
 	/* 媒体支持 */
 	.support{margin-top: 2rem;}
-	.support li{width:32.3%;height: auto;}
+	.support li{width:31.5%;height: auto;margin-bottom: 0.6rem;}
 	/* 底部 */
 	.footer-wrap{padding: 2rem 0 0 0;margin-top: 3rem;}
 	.footer{flex-wrap: wrap;margin-top: 0;}
