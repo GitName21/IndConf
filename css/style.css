@@ -56,12 +56,13 @@ body{background-color: var(--bgColor);}
 .process-time{width: 21%;text-align: right;padding: 0 2% 0 0;font-size: 0.875rem;}
 /* 行业普查 */
 .census{width: 100%;height: auto;display: flex;flex-wrap: nowrap;justify-content: space-between;margin-top: 3rem;}
-.census li{width: 33%;height: auto;text-align: center;}
-.census li>div:last-child{margin-top: 1rem;}
+.census li{width: 48%;height: auto;text-align: center;}
+.census li img{border: 0.0625rem solid #dab097;border-radius: 0.5rem;}
+.census li>div:last-child{margin-top: 1.5rem;}
 .census li>div:last-child div:first-child{color: #fff;}
 .census li img{width: 100%;height: auto;}
-.census-btn{width: 10rem;height: 3.5rem;margin: 1rem auto 0 auto;background-color: #fa7847;color: #fff;border-radius: 50rem;line-height: 3.5rem;transition: all 0.2s ease;}
-.census-btn:hover{background-color: #d9673d;}
+.census-btn{width: 10rem;height: 3.5rem;margin: 1.5rem auto 0 auto;background-color: #dab097;color: #fff;border-radius: 50rem;line-height: 3.5rem;transition: all 0.2s ease;}
+.census-btn:hover{background-color: #ba5445;}
 /* 活动亮点 */
 .highlights-cont{width: 100%;height: auto;margin: 1rem auto 0 auto;display: flex;justify-content: space-between;flex-wrap: wrap;}
 .highlights-cont li{width:24%;height: auto;margin-bottom: 1rem;display: flex;align-items: stretch;}
@@ -169,12 +170,12 @@ body{background-color: var(--bgColor);}
 .footer-review-con{width: 100%;height: auto;display: flex;justify-content: space-between;margin: 1rem 0;}
 .footer-review-con p{font-size: 0.875rem;color: #ffffff;margin-top: 1rem;}
 .footer-review-con>div{width: 49%;height: auto;}
-.footer-review-con>div>div{width: 100%;height: auto;border: 0.125rem solid #fff;overflow: hidden;display: flex;justify-content: center;border-radius: 0.3125rem;}
+.footer-review-con>div>div{width: 100%;height: auto;border: 0.125rem solid #d9ad95;overflow: hidden;display: flex;justify-content: center;border-radius: 0.3125rem;}
 .footer-review-con>div a{display: flex;justify-content: center;}
 .footer-review-con img{width: 100%;height: auto;}
 .footer-review-con>div:hover img{transform: scale(1.05);transition: all ease 0.3s;opacity: 0.5;}
 .footer-review-con>div>div:hover{transition: all ease 0.3s;opacity: 0.5;}
-.footer-copyright{width: 75rem;height: auto;margin:2rem auto;border-top: 0.0625rem solid #b81941;border-bottom: 0.0625rem solid #b81941;padding: 1rem 0;color: #ffffff;font-size: 0.875rem;display: flex;justify-content: space-between;}
+.footer-copyright{width: 75rem;height: auto;margin:2rem auto;border-top: 0.0625rem solid #b81941;border-bottom: 0.0625rem solid #b81941;padding: 1rem 0;color: #ffc9ca;font-size: 0.875rem;display: flex;justify-content: space-between;}
 /* 固定的二维码 */
 .fixed{position: fixed;width: 6rem;height: auto;right: 1rem;bottom: 2rem;}
 .fixed-code{width: auto;height: auto;background-color: #fff;box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);padding: 0.5rem;font-size: 0.75rem;color: #9c9c9c;text-align: center;margin-bottom: 2rem;border-radius: 0.5rem;}
@@ -191,7 +192,7 @@ body{background-color: var(--bgColor);}
 	.nav{width: 100%;height: auto;flex-wrap: wrap;}
 	.nav li{width: 100%;height: 3.5rem;line-height: 3.5rem;}
 	/* 移动端导航栏 */
-	.mobile-nav-wrap{display: block;background-color: var(--boxColor);height: 4.5rem;width: 100%;}
+	.mobile-nav-wrap{display: block;background-color: rgba(186, 84, 69, 0.8);height: 4.5rem;width: 100%;}
 	.mobile-nav{width: 92%;height: 4.5rem;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
 	.mobile-logo{width: 40%;height: auto;}
 	.mobile-logo img{width: 100%;height: auto;}
@@ -222,6 +223,10 @@ body{background-color: var(--bgColor);}
 	/* 行业普查 */
 	.census{width: 100%;height: auto;flex-wrap: wrap;margin-top: 2rem;}
 	.census li{width: 100%;height: auto;margin-bottom: 2rem;}
+	.census li:last-child{margin-bottom: 0;}
+	.census li>div:last-child div:first-child{font-size: 0.875rem;}
+	.census li>div:last-child{margin-top: 1rem;}
+	.census-btn{margin: 1rem auto 0 auto;}
 	/* 内容块 */
 	.main{width: 92%;margin-top: 2.5rem;}
 	.box-title{font-size: 1.35rem;}
@@ -286,7 +291,7 @@ body{background-color: var(--bgColor);}
 	.footer-review-con div{width: 100%;height: auto;}
 	.footer-review-con p{font-size: 0.875rem;margin: 0.5rem 0 1rem 0;}
 	.footer-review-con:last-child{margin-bottom: 0;}
-	.footer-review-con>div>div{border: 0.0625rem #fff solid;}
+	.footer-review-con>div>div{border: 0.0625rem #d9ad95 solid;}
 	.footer-copyright span{margin: 0 0.5rem;}
 	/* 固定二维码 */
 	.fixed-code{display: none;}
