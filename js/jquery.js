@@ -44,7 +44,7 @@ $(document).ready(function(){
 				(e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));              // firefox
 		var winScroll = $(window).scrollTop();	//获取屏幕滚动距离
 		var winWidth = $(window).width();
-		if(winWidth > 767){	//移动端不执行
+		if(winWidth > 992){	//移动端不执行
 			if (delta > 0) {
 				// 向上滚
 				// console.log("wheelup");
