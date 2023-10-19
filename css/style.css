@@ -324,7 +324,7 @@ body{background-color: var(--bgColor);}
 	.nav{width: 100%;height: auto;flex-wrap: wrap;}
 	.nav li{width: 100%;height: 3.5rem;line-height: 3.5rem;}
 	/* 移动端导航栏 */
-	.mobile-nav-wrap{display: block;background-color: rgba(186, 84, 69, 0.8);height: 4.5rem;width: 100%;}
+	.mobile-nav-wrap{display: block;background-color: #cb214c;height: 4.5rem;width: 100%;}
 	.mobile-nav{width: 92%;height: 4.5rem;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
 	.mobile-logo{width: 40%;height: auto;}
 	.mobile-logo img{width: 100%;height: auto;}
